@@ -8,7 +8,11 @@ void order_pair(int *a, int*b){
 }
 
 int main(void) {
-    int x=7, y = 4;
+    int x, y;
+    if(scanf("%d %d", &x, &y) != 2){
+        printf("Ошибка ввода");
+        return 1;
+    }
     order_pair(&x, &y);
     printf("%d %d\n", x , y);
     return 0;
@@ -16,4 +20,3 @@ int main(void) {
     
 
 }
-
